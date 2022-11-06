@@ -43,4 +43,29 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function birth()
+    {
+        return $this->belongsTo('App\Models\Birth');
+    }
+
+    public function birthday()
+    {
+        return $this->belongsTo('App\Models\Birthday');
+    }
+
+    public function department()
+    {
+        return $this->belongsTo('App\Models\Department');
+    }
+
+    public function division()
+    {
+        return $this->belongsTo('App\Models\Division');
+    }
+
+    public function position()
+    {
+        return $this->belongsTo('App\Models\Position');
+    }
 }

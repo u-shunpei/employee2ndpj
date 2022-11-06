@@ -62,7 +62,6 @@
           </span>
                     @enderror
                 </div>
-        </div>
 
         <div class="text-center">
             <button type="submit" class="btn submitBtn">はじめる</button>

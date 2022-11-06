@@ -21,6 +21,12 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('img_name')->default('');
             $table->string('self_introduction', 500)->nullable();
+            $table->string('nickname')->nullable();
+            $table->string('tel')->unique()->nullable();
+            $table->string('hobby', 500)->nullable();
+            $table->string('work', 500)->nullable();
+            $table->string('skill', 500)->nullable();
+            $table->string('target', 500)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
